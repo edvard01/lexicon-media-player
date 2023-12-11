@@ -24,14 +24,13 @@ main {
 }
 
 .playlist-box {
-  width: 50%;
+  width: 35%;
   display: flex;
   flex-direction: column;
-  height: 100vh;
 }
 
 .playing-box {
-  width: 50%;
+  width: 65%;
   display: flex;
   height: 100vh;
 }
@@ -39,19 +38,30 @@ main {
 .song {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  width: 100%;
-  padding: 28px;
+  width: 30vw;
+  height: 160px;
+  padding: 16px;
+  background-color: rgb(87, 87, 255);
+  justify-content: space-between;
+  border-bottom-style: solid;
+  border-color: black;
 }
 
-.song span {
-  margin-left: 5%;
-  justify-self: space-between;
-  width: 30%;
+.active-song {
+  background-color: rgba(46, 46, 255, 0.575);
 }
 
 .song img {
   width: 128px;
   height: 128px;
+}
+
+.song h3 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.song p {
+  font-size: 18px;
 }
